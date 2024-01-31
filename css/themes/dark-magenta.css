@@ -1,0 +1,13 @@
+/*
+ * Dark Magenta Theme
+ */
+
+body {
+    background-color: darkmagenta;
+    color: white;
+}
+
+
+.card {
+    background-color: turquoise;
+}
