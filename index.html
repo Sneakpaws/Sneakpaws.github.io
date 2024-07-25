@@ -10,6 +10,9 @@
 
         <!-- Theme -->
         <link rel="stylesheet" href="/css/themes/dark-magenta.css">
+
+        <!-- Custom JS -->
+        <script src="/js/index.js"></script>
     </head>
     <body>
         <div class="container-fluid">
@@ -18,76 +21,479 @@
                 <h1 class="col m-2">SneakPaws' Commissions</h1>
             </div>
 
-            <!-- Headshot samples and pricing -->
+            <!-- Headshot -->
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8 col-sm-12 m-2 card">
-                    <img class="card-img-top" src="https://i.imgur.com/JPfZGNA.png">
-                    <hr>
-                    <img class="card-img-top" src="https://i.imgur.com/sRIwfNr.png">
-                    <hr>
                     <div class="card-body">
-                        <h5 class="card-title">Headshot</h5>
-                        <div class="card-text"><strong>Price: </strong>$5</div>
-                        <div class="card-text">Sized to be a pfp.</div>
+                        <h4 class="card-title"><strong>Headshot</strong></h4>
+                        <div class="card-text">
+                            <h5><strong>Symmetrical headshots</strong></h5>
+                            <ul>
+                                <li>fully shaded with highlights</li>
+                                <li>ideal for pfp</li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>No fur~</strong></div>
+                                <div class="col">$5</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Semi furred~</strong></div>
+                                <div class="col">$8</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Fully furred~</strong></div>
+                                <div class="col">$12</div>
+                            </div>
+                            <br/>
+                            <h5><strong>Expression headshots</strong></h5>
+                            <ul>
+                                <li>fully shaded with highlights</li>
+                                <li>choose from the list</li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>No fur~</strong></div>
+                                <div class="col">$8</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Semi fur~</strong></div>
+                                <div class="col">$11</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Fully furred~</strong></div>
+                                <div class="col">$15</div>
+                            </div>
+                            <br/>
+                            <h5><strong>Expression Chart</strong></h5>
+                            <div class="row">
+                                <img class="col" id="expressionChart" src="https://i.imgur.com/8rXFdCh.jpeg" alt="expressionChart">
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="carousel slide bg-dark" id="headshots">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/JPfZGNA.png" alt="headshot1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/sRIwfNr.png" alt="headshot2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/s4p1XGr.png" alt="headshot3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/4xIqW8M.png" alt="headshot4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/psEbtLR.png" alt="headshot5">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#headshots" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#headshots" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Fullbody samples and pricing -->
+            <!-- Halfbody -->
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8 col-sm-12 m-2 card">
-                    <img class="card-img-top" src="https://i.imgur.com/rJFNeJi.png">
-                    <hr>
-                    <img class="card-img-top" src="https://i.imgur.com/NsZHgzt.png">
-                    <hr>
                     <div class="card-body">
-                        <h5 class="card-title">Fullbody</h5>
-                        <div class="card-text"><strong>Price: </strong>$15</div>
+                        <h4 class="card-title"><strong>Halfbody</strong></h4>
+                        <div class="card-text">
+                            <!-- <h5><strong>Halfbody</strong></h5> -->
+                            <ul>
+                                <li>fully shaded with highlights</li>
+                                <li>rest of the body will cut off the drawing</li>
+                                <li>if you want an expression please choose from the <a href="#expressionChart">list</a></li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>No fur~</strong></div>
+                                <div class="col">$13</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Semi fur~</strong></div>
+                                <div class="col">$16</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Fully furred~</strong></div>
+                                <div class="col">$20</div>
+                            </div>
+                        </div>
+                        <div class="carousel slide bg-dark" id="halfbodies">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/WjetdYL.png" alt="halfbody1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/iEtmk72.png" alt="halfbody2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/uuePh7j.png" alt="halfbody3">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#halfbodies" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#halfbodies" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Ref sheet samples and pricing -->
+            <!-- Fullbody -->
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8 col-sm-12 m-2 card">
-                    <img class="card-img-top" src="https://i.imgur.com/QN7QoJU.png">
-                    <hr>
-                    <img class="card-img-top" src="https://i.imgur.com/XxvW2X2.png">
-                    <hr>
                     <div class="card-body">
-                        <h5 class="card-title">Ref Sheet</h5>
-                        <div class="card-text"><strong>Price: </strong>$25</div>
-                        <div class="card-text">Provide as much detail as possible.</div>
+                        <h4 class="card-title"><strong>Fullbody</strong></h4>
+                        <div class="card-text">
+                            <!-- <h5><strong>Fullbody</strong></h5> -->
+                            <ul>
+                                <li>fully shaded with highlights</li>
+                                <li>includes the fullbody</li>
+                                <li>ideal for props and poses</li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>No fur~</strong></div>
+                                <div class="col">$15</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Semi furred~</strong></div>
+                                <div class="col">$18</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Fully furred~</strong></div>
+                                <div class="col">$22</div>
+                            </div>
+                        </div>
+                        <div class="carousel slide bg-dark" id="fullbodies">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/h3IVo8a.png" alt="fullbody1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/xbJ1j1h.png" alt="fullbody2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/JE2CYex.png" alt="fullbody3">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#fullbodies" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#fullbodies" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Scene samples and pricing -->
+            <!-- Scene -->
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8 col-sm-12 m-2 card">
-                    <img class="card-img-top" src="https://i.imgur.com/oXH9rxn.png">
-                    <hr>
-                    <img class="card-img-top" src="https://i.imgur.com/Iy6BLzZ.png">
-                    <hr>
                     <div class="card-body">
-                        <h5 class="card-title">Scene</h5>
-                        <div class="card-text"><strong>Price: </strong>$30-40</div>
-                        <div class="card-text">Depends on complexity.</div>
+                        <h4 class="card-title"><strong>Scene</strong></h4>
+                        <div class="card-text">
+                            <ul>
+                                <li>includes a more detailed background</li>
+                                <li>can include props</li>
+                                <li>fully shaded and highlighted</li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>No fur~</strong></div>
+                                <div class="col">$50</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Semi furred~</strong></div>
+                                <div class="col">$53</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Fully furred~</strong></div>
+                                <div class="col">$57</div>
+                            </div>
+                        </div>
+                        <div class="carousel slide bg-dark" id="scenes">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/tLOIKJg.png" alt="scene1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/ktoISKk.png" alt="scene2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/fbxbGXN.png" alt="scene3">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#scenes" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#scenes" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Contact Info -->
+            <!-- Basic Ref -->
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8 col-sm-12 m-2 card">
-                    <h5 class="card-title">Contact Info</h5>
-                    <div class="row">
-                        <div class="col-lg-2 col-md-4 col-sm-6 card-text"><strong>Instagram:</strong></div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 card-text"><a href="https://www.instagram.com/sneakpaws_/">@sneakpaws</a></div>
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>Basic Ref</strong></h4>
+                        <div class="card-text">
+                            <h5><strong>Ref sheets</strong></h5>
+                            <ul>
+                                <li>basic refs include name, gender, 1x fullbody and 1x headshot. Design details such as color pallet, eyes, tongue, paw beans and any clothing/accessories.</li>
+                                <li>complex refs includes the above and occupation, species, extra design details such as blood and saliva, and details on the design and coloring details, and side and back view. You can also optionally include 3x likes and 3x dislikes</li>
+                                <li>please provide as much details on your fursona as possible and as many images you can provide</li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Basic ref~</strong></div>
+                                <div class="col">$40</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Complex ref~</strong></div>
+                                <div class="col">$75</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Custom ref~</strong></div>
+                                <div class="col">$5 added to original cost</div>
+                            </div>
+                        </div>
+                        <div class="carousel slide bg-dark" id="basicRefs">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/U3JYUys.png" alt="basicRef1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/KdV8pTt.png" alt="basicRef2">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#basicRefs" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#basicRefs" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-2 col-md-4 col-sm-6 card-text"><strong>Discord:</strong></div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 card-text">@sneakpaws</div>
+                </div>
+            </div>
+
+            <!-- Detailed Ref -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-12 m-2 card">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>Detailed Ref</strong></h4>
+                        <div class="card-text">
+                            <h5><strong>Ref sheets</strong></h5>
+                            <ul>
+                                <li>basic refs include name, gender, 1x fullbody and 1x headshot. Design details such as color pallet, eyes, tongue, paw beans and any clothing/accessories.</li>
+                                <li>complex refs includes the above and occupation, species, extra design details such as blood and saliva, and details on the design and coloring details, and side and back view. You can also optionally include 3x likes and 3x dislikes</li>
+                                <li>please provide as much details on your fursona as possible and as many images you can provide</li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Basic ref~</strong></div>
+                                <div class="col">$40</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Complex ref~</strong></div>
+                                <div class="col">$75</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Custom ref~</strong></div>
+                                <div class="col">$5 added to original cost</div>
+                            </div>
+                        </div>
+                        <div class="carousel slide bg-dark" id="detailedRefs">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/DDaRtKF.png" alt="detailedRef1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/saQoYBH.png" alt="detailedRef2">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#detailedRefs" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#detailedRefs" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Traditional -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-12 m-2 card">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>Traditional</strong></h4>
+                        <div class="card-text">
+                            <ul>
+                                <li>colored with colored pencils</li>
+                                <li>lined in black marker</li>
+                                <li>i can not make edits to these</li>
+                                <li>+$1 if you want it fully colored in marker</li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Fullbody~</strong></div>
+                                <div class="col">$5</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Halfbody~</strong></div>
+                                <div class="col">$3</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm"><strong>Headshot~</strong></div>
+                                <div class="col">$1</div>
+                            </div>
+                        </div>
+                        <div class="carousel slide bg-dark" id="traditional">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/J4enCd5.png" alt="traditional1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/O3U663Y.jpeg" alt="traditional2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <img class="col-6 d-block" src="https://i.imgur.com/3XaEBLX.png" alt="traditional3">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#traditional" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#traditional" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extra Info -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-12 m-2 card">
+                    <div class="card-body">
+                            <h4 class="card-title"><strong>Extra</strong></h4>
+                        <h5><strong>Backgrounds</strong></h5>
+                        <ul>
+                            <li>added to the original cost</li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-4 col-sm"><strong>Simple~</strong></div>
+                            <div class="col">+$1</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-4 col-sm"><strong>Complex~</strong></div>
+                            <div class="col">+$10</div>
+                        </div>
+                        <br/>
+                        <h5><strong>Discounts</strong></h5>
+                        <div>All friends get 20% off my commissions. Shading is automatically included.
+                            </div>
+                        <br/>
+                        <h5><strong>Contact Info</strong></h5>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-4 col-sm-6 card-text"><strong>Instagram:</strong></div>
+                            <div class="col card-text"><a href="https://www.instagram.com/sneakpaws_/">@sneakpaws</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-4 col-sm-6 card-text"><strong>Discord:</strong></div>
+                            <div class="col card-text">@sneakpaws</div>
+                        </div>
                     </div>
                 </div>
             </div>
